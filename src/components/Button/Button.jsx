@@ -3,7 +3,7 @@ import css from './Button.module.css';
 
 export const Button = ({ loadMode }) => {
   return (
-    <button type="button" className={css.button} onClick={loadMode}>
+    <button type="button" className={css.Button} onClick={loadMode}>
       Load more
     </button>
   );
