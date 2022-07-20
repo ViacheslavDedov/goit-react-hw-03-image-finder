@@ -72,10 +72,8 @@ export class App extends Component {
     });
   };
 
-  closeModal = e => {
-    if (e.target === e.currentTarget || e.key === 'Escape') {
+  closeModal = () => {
       this.setState({ originalImageUrl: '' });
-    }
   };
 
   render() {

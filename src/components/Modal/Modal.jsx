@@ -15,6 +15,18 @@ export class Modal extends Component {
     this.props.closeModal(e);
   };
 
+  handleKeyDown = e => {
+    if (e.code === 'Escape') {
+      this.props.onClose();
+    }
+  };
+
+  handleBackdropClick = e => {
+    if (e.target === e.currentTarget) {
+      this.props.onClose();
+    }
+  };
+
   render() {
     const { url, alt, closeModal } = this.props;
     return (
